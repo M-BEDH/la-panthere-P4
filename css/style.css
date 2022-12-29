@@ -100,11 +100,11 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.973);
 }
 
 .d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, 0.494);
 }
 
 .d-bloc .icon-round,
@@ -273,9 +273,13 @@ a:hover {
 }
 
 .row-no-gutters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* superflu
     margin-right: 0;
-    margin-left: 0;
-}
+    margin-left: 0;  */
+}  
 
 .row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
@@ -325,7 +329,8 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    /* augmentation taille police*/
+    font-size: 20px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -476,12 +481,14 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    /* augmentation taiile icone 
+    font-size: 30px!important;*/
+    font-size: 40px! important;
 }
 
 .icon-lg {
     font-size: 60px!important;
-}
+} 
 
 .sm-shadow {
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
@@ -651,7 +658,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: black! important;
 }
 
 .container {
@@ -677,7 +684,9 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 17px;
+    /* ajout couleur amélioration contraste*/
+    color: #000000;
 }
 
 .tight-width-whitespace {
@@ -701,12 +710,19 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    /* un seul margin auto */
+    margin: auto;
+    /* Aeration des elements*/
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+     /* ajout couleur amélioration contraste*/
+     color: #000000;
+
 }
 
 h3 {
@@ -737,6 +753,8 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+    /* grossissementn police, accéssibilité */
+    font-size: 18px;
 }
 
 .portfolio-thumb {
@@ -758,6 +776,8 @@ h4 {
 }
 
 .bold-link {
+     /* changement couleur police */
+     color: white;
     font-weight: 900;
     text-decoration: underline!important;
 }
@@ -769,31 +789,32 @@ h4 {
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
-
+/* Changement couleur pour amélioration contraste */
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: rgb(190, 190, 41);
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: yellow!important;
 }
-
+/* Changement couleur pour amélioration contraste */
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: rgb(190, 190, 41);
+    color: #141414!important;
 }
-
+/* Changement couleur pour aélioration contraste */
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: rgb(243, 243, 122);
+    color: #1c1b1b!important;
 }
 
 .ltc-white {
     color: #FFFFFF!important;
+    font-size: 20px;
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #534f4f!important;
 }
 
 .ltc-atomic-tangerine {
@@ -810,13 +831,13 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("../img/dots-bg.png");
 }
-
+ /* lines enlevées amélioration temps chargement --
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("../img/lines-h2-bg.png");
 }
-
+*/
 .bg-banniere {
     background-image: url("../img/agence-la-panthere.jpg"); 
 }

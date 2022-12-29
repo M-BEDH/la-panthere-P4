@@ -1405,8 +1405,9 @@ textarea {
     line-height: inherit
 }
 
-a {
-    color: #337ab7;
+a { 
+    /* changements de couleurs car problèmes suite chgt css*/ 
+    color: #00050a;
     text-decoration: none
 }
 
@@ -2009,12 +2010,12 @@ pre code {
     margin-right: auto;
     margin-left: auto
 }
-
+/* supprimé - inutile-
 .row {
     margin-right: -15px;
     margin-left: -15px
 }
-
+*/
 .col-lg-1,
 .col-lg-10,
 .col-lg-11,
