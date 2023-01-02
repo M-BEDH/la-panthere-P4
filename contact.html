@@ -39,7 +39,7 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="atlanta web design logo" height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="atlanta web design logo" height="40"></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -84,24 +84,30 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1">
+					<!-- Retrait élement non autorisé à ce stade - validation w3c -->
+					
 					<div class="form-group">
 						<label>
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" class="form-control" required>
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" class="form-control" type="email" value="Email">
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<select name="info" id="info">
+							<option value="connaissance">Part une connaissance.</option>
+							<option value="web" selected="">En navigant sur Internet.</option>
+							<option value="réseaux sociaux">En surfant sur les réseaux sociaux.</option>
+						</select>
 					</div>
 					<div class="form-group">
 						<label>
@@ -111,6 +117,7 @@
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
+					
 				</form>
 			</div>
 			<div class="col-sm-6">
@@ -139,22 +146,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://facebook.com"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="https://drille.com"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://instagram.com"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
@@ -170,3 +177,4 @@
 
 </body>
 </html>
+
