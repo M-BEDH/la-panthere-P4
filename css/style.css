@@ -195,11 +195,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, 0.943);
-}
-/* ajout couleur button */
-#info :active{
-    color: yellow;
+    color: rgb(0, 0, 0);
 }
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
@@ -518,6 +514,7 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    color: #000000;
 }
 
 .scrollToTop {
