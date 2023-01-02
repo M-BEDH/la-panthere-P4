@@ -312,6 +312,7 @@ a:hover {
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
+    max-width: 300px;
 }
 
 .nav-center .navbar-brand img {
@@ -461,7 +462,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: yellow;
 }
 
 button {
@@ -521,9 +522,13 @@ button {
     width: 40px;
     height: 40px;
     position: fixed;
+    /* diminution margin pour accessibilité */
     bottom: 20px;
-    right: 20px;
-    opacity: 0;
+    right: 0px;   
+
+    /* augmentation opacity pour amélioration accessibilité */
+    opacity: 0.4;   
+                     
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -534,7 +539,8 @@ button {
 
 .showScrollTop {
     font-size: 14px;
-    opacity: 1;
+    opacity: 0.8;
+    color: #FFFFFF;
 }
 
 a[data-lightbox] {
