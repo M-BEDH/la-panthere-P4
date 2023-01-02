@@ -462,7 +462,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
-    background: yellow;
+    background: rgb(0, 0, 0, 3);
 }
 
 button {
@@ -525,10 +525,7 @@ button {
     /* diminution margin pour accessibilité */
     bottom: 20px;
     right: 0px;   
-
-    /* augmentation opacity pour amélioration accessibilité */
-    opacity: 0.4;   
-                     
+    opacity: 0;              
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -539,7 +536,7 @@ button {
 
 .showScrollTop {
     font-size: 14px;
-    opacity: 0.8;
+    opacity: 1;
     color: #FFFFFF;
 }
 
